@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <title>Ahlawat Gunjan</title>
+    <style>
+        body {
+            -webkit-user-select: none !important;
+            -moz-user-select: -moz-none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+        }
+
+        @font-face {
+            font-family: europa;
+            src: url(./assets/fonts/europa.ttf);
+        }
+
+        @font-face {
+            font-family: europa-bold;
+            src: url(./assets/fonts/europa-bold.ttf);
+            font-weight: 700;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            justify-content: center;
+        }
+
+        a {
+
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            width: 95vw;
+            display: block;
+            margin: 4.5vw auto 0 auto;
+            min-height: calc(100vh - 9vw);
+            /* background-color: aqua; */
+        }
+
+        #header {
+            display: block;
+            line-height: 40px;
+            width: 100%;
+            /* background-color: teal; */
+        }
+
+        #name {
+            font-size: 16px;
+            line-height: 19.2px;
+            font-family: europa-bold, europa, sans-serif;
+            letter-spacing: 11px;
+            color: rgb(17, 17, 17)
+        }
+
+        #title {
+            font-size: 9px;
+            line-height: 47.7px;
+            font-family: europa-bold, europa, sans-serif;
+            letter-spacing: 4.5px;
+            color: rgb(208, 206, 206)
+        }
+
+        #nav {
+            display: flex;
+            width: 100%;
+            font-family: europa-bold, europa, sans-serif;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 4.5px;
+            line-height: 18px;
+            margin-top: 10px;
+            color: rgb(244, 215, 215) !important;
+            /* background-color: cadetblue; */
+        }
+
+        #nav>div {
+            padding: 0 50px 0 50px;
+            font-family: europa-bold, europa, sans-serif;
+        }
+
+        #nav>div>a:hover {
+            color: rgb(17, 17, 17);
+        }
+
+        #social-media {
+            display: flex;
+            width: 100%;
+            /* background-color: aquamarine; */
+            min-height: 10px;
+            margin: 50px auto 0 auto;
+            line-height: 15px;
+        }
+
+        #social-media img {
+            height: 17px;
+            padding: 0 14px 0 14px;
+            opacity: 0.5;
+        }
+
+        #social-media img:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        #image-wrapper {
+            display: flex;
+            /* background-color: brown; */
+            opacity: 0.5;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            width: 225px;
+            height: 300px;
+            background-color: burlywood;
+            margin: 20px;
+        }
+
+        .image img {
+            width: calc(100% - 35px);
+            height: inherit;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="name">AHLAWAT GUNJAN</div>
+            <div id="title">DESIGN, TYPOGRAPHY & BOOKS</div>
+        </div>
+        <div id="nav">
+            <div><a href="#">Work</a></div>
+            <div><a href="#">Contact</a></div>
+            <div><a href="#">About</a></div>
+        </div>
+        <div id="social-media">
+            <img src="./assets/svg/ig.svg" alt="Instagram" onclick="location.href='http://www.google.com/';">
+            <img src="./assets/svg/twitter.svg" alt="Twitter" onclick="location.href='http://www.google.com/';">
+        </div>
+        <div id="image-wrapper">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </div>
+</body>
+
+</html>
