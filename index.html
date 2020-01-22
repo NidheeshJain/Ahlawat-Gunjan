@@ -30,6 +30,10 @@
             justify-content: center;
         }
 
+        *:hover{
+            transition:all 0.5s;
+        }
+
         a {
 
             color: inherit;
@@ -112,22 +116,29 @@
         #image-wrapper {
             display: flex;
             /* background-color: brown; */
-            opacity: 0.5;
             margin-top: 40px;
             flex-wrap: wrap;
+            margin-bottom:60px;
         }
 
         .image {
-            width: 225px;
+            width: 300px;
             height: 300px;
             background-color: burlywood;
-            margin: 20px;
+            opacity:0.5;
+            margin: 5px;
         }
 
         .image img {
             width: calc(100% - 35px);
             height: inherit;
+        }
 
+        .image:hover {
+            transition: all 0.5s;
+            background-color: black;
+            opacity:1;
+            cursor:pointer;
         }
     </style>
 </head>
@@ -148,9 +159,6 @@
             <img src="./assets/svg/twitter.svg" alt="Twitter" onclick="location.href='http://www.google.com/';">
         </div>
         <div id="image-wrapper">
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
             <div class="image"></div>
             <div class="image"></div>
             <div class="image"></div>
