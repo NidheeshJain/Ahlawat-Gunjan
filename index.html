@@ -8,6 +8,10 @@
             -moz-user-select: -moz-none !important;
             -ms-user-select: none !important;
             user-select: none !important;
+            transform-origin: top center;
+            transition-duration: 0.5s;
+            transform: scale(3.2);
+            overflow:hidden;
         }
 
         @font-face {
@@ -60,7 +64,7 @@
         }
 
         #name {
-            font-size: 16px;
+            font-size: 19px;
             line-height: 19.2px;
             font-family: europa-bold, europa, sans-serif;
             letter-spacing: 11px;
@@ -68,7 +72,7 @@
         }
 
         #title {
-            font-size: 9px;
+            font-size: 10px;
             line-height: 47.7px;
             font-family: europa-bold, europa, sans-serif;
             letter-spacing: 4.5px;
@@ -80,10 +84,10 @@
             width: 100%;
             font-family: europa-bold, europa, sans-serif;
             text-transform: uppercase;
-            font-size: 9px;
+            font-size: 13px;
             letter-spacing: 4.5px;
             line-height: 18px;
-            margin-top: 10px;
+            margin-top: 12px;
             color: rgb(244, 215, 215) !important;
             /* background-color: cadetblue; */
         }
@@ -138,6 +142,7 @@
             background-color: burlywood;
             opacity: 0.5;
             margin: 5px;
+            border-radius: 6px;
         }
 
         .image img {
@@ -168,14 +173,15 @@
             <div id="title">DESIGN, TYPOGRAPHY & BOOKS</div>
         </div>
         <div id="nav">
-            <div><a href="#">Work</a></div>
-            <div><a href="#">Contact</a></div>
-            <div><a href="#">About</a></div>
+            <div><a href="#" onclick="myFunction()">Work</a></div>
+            <div><a href="#" onclick="myFunction()">Contact</a></div>
+            <div><a href="#" onclick="myFunction()">About</a></div>
         </div>
         <div id="social-media">
             <img src="./assets/svg/ig.svg" alt="Instagram" onclick="location.href='#';">
             <img src="./assets/svg/twitter.svg" alt="Twitter" onclick="location.href='#';">
         </div>
+
         <div id="image-wrapper">
             <div class="image"></div>
             <div class="image"></div>
@@ -191,6 +197,12 @@
             <div class="image"></div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            document.querySelector("body").style.transform = "scale(1)";
+            document.querySelector("body").style.overflowY = "auto";
+        }
+    </script>
 </body>
 
 </html>
